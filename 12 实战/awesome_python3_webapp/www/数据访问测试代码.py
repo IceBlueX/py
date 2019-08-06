@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+__author__ = 'LBK'
+
 """
 测试数据库是否连接正常
 同时ORM框架是否可用
 """
-
-
-__author__ = 'LBK'
 
 import orm_psql
 from models import User, Blog, Comment
