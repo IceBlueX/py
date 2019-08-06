@@ -15,7 +15,7 @@ import asyncio
 import random
 
 
-async def test(loop):
+async def link(loop):
     await orm_psql.create_pool(loop, user='libaokun', password='password', database='test')
 
     u = User(name='Test', email='test%s@example.com' % random.randint(0, 10000000), passwd='1234567890', image='about:blank')
@@ -26,7 +26,7 @@ async def test(loop):
 # 要运行协程，需要使用事件循环
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()
-    loop.run_until_complete(test(loop))
+    loop.run_until_complete(link(loop))
     print('Test finished.')
     loop.close()
 
