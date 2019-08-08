@@ -132,9 +132,9 @@ class TextField(Field):
 # 元类 通过元类的映射读取到user的映射信息
 class ModelMetaclass(type):
 
-    def __new__(cls, name, bases, attrs):
+    def __new__(mcs, name, bases, attrs):
         if name == 'Model':
-            return type.__new__(cls, name, bases, attrs)
+            return type.__new__(mcs, name, bases, attrs)
 
         tableName = attrs.get('__table__', None) or name
         logging.info('found model: %s (table: %s)' % (name, tableName))
@@ -169,7 +169,7 @@ class ModelMetaclass(type):
         attrs['__update__'] = 'update %s set %s where %s=?' % (tableName, ', '.join(map(lambda f: '`%s`=?' % (mappings.get(f).name or f), fields)), primaryKey)
         attrs['__delete__'] = 'delete from %s where %s=?' % (tableName, primaryKey)
 
-        return type.__new__(cls, name, bases, attrs)
+        return type.__new__(mcs, name, bases, attrs)
 
 
 # 所有ORM映射的基类
@@ -220,7 +220,7 @@ class Model(dict, metaclass=ModelMetaclass):
 
         orderBy = kw.get('orderBy', None)
         if orderBy:
-            sql.append('orderBy')
+            sql.append('order by')
             sql.append(orderBy)
 
         limit = kw.get('limit', None)
@@ -236,7 +236,13 @@ class Model(dict, metaclass=ModelMetaclass):
                 raise ValueError('Invalid limit value: %s' % str(limit))
 
         rs = await select(' '.join(sql), args)
-        return [cls(**r) for r in rs]
+
+        fields = ('id', 'email', 'passwd', 'admin', 'name', 'image', 'creat_time')
+        rs_dict = []
+        for r in rs:
+            rs_dict.append(dict(zip(fields, r)))
+        print('在 orm_psql.py->Model->findAll 将数据库获得的数据送到index', rs_dict)
+        return [cls(**r) for r in rs_dict]
 
     @classmethod
     async def findNumber(cls, selectField, where=None, args=None):

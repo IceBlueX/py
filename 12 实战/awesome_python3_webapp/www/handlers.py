@@ -17,9 +17,12 @@ from models import User, Comment, Blog, next_id
 @get('/')
 async def index(request):
     users = await User.findAll()
+    print('在 handlers.py->index中 根据路径获得后端返回的数据', users)
+    # for u in users:
+    #     print(u.name, u.email)
     return {
         '__template__': 'test.html',
-        'user': users
+        'users': users
     }
 
 
