@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4afd17b8-252d-4eca-a201-aa7e9f9cb905" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/数据处理/pandas_try.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/py.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/py.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,19 +32,10 @@
         <entry file="file://$PROJECT_DIR$/数据处理/pandas_try.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding>
                 <element signature="e#68#86#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -112,20 +100,7 @@
             <path>
               <item name="py" type="b2602c69:ProjectViewProjectNode" />
               <item name="py" type="462c0819:PsiDirectoryNode" />
-              <item name="12 实战" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="py" type="b2602c69:ProjectViewProjectNode" />
-              <item name="py" type="462c0819:PsiDirectoryNode" />
-              <item name="12 实战" type="462c0819:PsiDirectoryNode" />
-              <item name="awesome_python3_webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="py" type="b2602c69:ProjectViewProjectNode" />
-              <item name="py" type="462c0819:PsiDirectoryNode" />
-              <item name="12 实战" type="462c0819:PsiDirectoryNode" />
-              <item name="awesome_python3_webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="postgresql-python" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="py" type="b2602c69:ProjectViewProjectNode" />
@@ -262,6 +237,9 @@
       <module name="py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/数据处理" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -335,11 +313,12 @@
       <workItem from="1564361948606" duration="570000" />
       <workItem from="1564364005858" duration="35434000" />
       <workItem from="1564966877457" duration="8397000" />
+      <workItem from="1565249217871" duration="110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64472000" />
+    <option name="totallyTimeSpent" value="64586000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,7 +333,7 @@
     <frame x="509" y="60" width="1386" height="979" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23363096" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24330357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -369,16 +348,16 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32977462" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.32919955" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.32919955" />
       <window_info anchor="bottom" id="找到" order="13" />
       <window_info anchor="bottom" id="运行" order="14" weight="0.31079477" />
       <window_info anchor="bottom" id="调试" order="15" />
-      <window_info anchor="right" x="0" y="0" width="296" height="779" id="Documentation" side_tool="true" visible="true" weight="0.3296131" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" x="0" y="0" width="296" height="779" id="Documentation" order="5" side_tool="true" visible="true" weight="0.2715774" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532656" />
@@ -536,16 +515,6 @@
     <entry file="file://$PROJECT_DIR$/postgresql-python/profile.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/postgresql-python/connect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -663,13 +632,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/数据访问测试代码.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/数据访问测试代码.py" />
     <entry file="file://$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -699,10 +662,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/postgresql-python/connect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/数据处理/pandas_try.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding>
             <element signature="e#68#86#0" expanded="true" />
           </folding>
