@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4afd17b8-252d-4eca-a201-aa7e9f9cb905" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4afd17b8-252d-4eca-a201-aa7e9f9cb905" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +88,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,7 +110,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,11 +312,12 @@
       <workItem from="1564364005858" duration="35434000" />
       <workItem from="1564966877457" duration="8397000" />
       <workItem from="1565249217871" duration="110000" />
+      <workItem from="1565250083445" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64586000" />
+    <option name="totallyTimeSpent" value="64592000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,9 +330,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="509" y="60" width="1386" height="979" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24330357" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2470238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -348,7 +346,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32977462" />
-      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.32919955" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.32919955" />
       <window_info anchor="bottom" id="找到" order="13" />
       <window_info anchor="bottom" id="运行" order="14" weight="0.31079477" />
       <window_info anchor="bottom" id="调试" order="15" />
