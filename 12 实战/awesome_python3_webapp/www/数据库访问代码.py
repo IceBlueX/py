@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import json
 
 __author__ = 'LBK'
 
@@ -26,10 +27,16 @@ async def link(loop):
 
 # 要运行协程，需要使用事件循环
 if __name__ == '__main__':
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(link(loop))
-    print('Test finished.')
-    loop.close()
+
+    f = open("./config.json")
+    config = json.load(f)
+    f.close()
+    print(config['post'])
+
+    # loop = asyncio.get_event_loop()
+    # loop.run_until_complete(link(loop))
+    # print('Test finished.')
+    # loop.close()
 
 # def test():
 #     yield from orm.create_pool('libaokun', password='password', database='test')
