@@ -8,16 +8,14 @@
             <li class="uk-disabled"><span><i class="uk-icon-angle-double-left"></i></span></li>
         {% endif %}
             <li class="uk-active"><span>{{ page.page_index }}</span></li>
-
         {% if page.has_next %}
             <li><a href="{{ url }}{{ page.page_index + 1 }}"><i class="uk-icon-angle-double-right"></i></a></li>
         {% else %}
             <li class="uk-disabled"><span><i class="uk-icon-angle-double-right"></i></span></li>
         {% endif %}
     </ul>
-{% endmcro %}
+{% endmacro %}
 -->
-
 <html>
 <head>
     <meta charset="UTF-8" />
@@ -54,10 +52,13 @@
                             </ul>
                         </div>
                     </li>
+                {% else %}
+                    <li><a href="/signin"><i class="uk-icon-sign-in"></i> 登录</a> </li>
+                    <li><a href="/register"><i class="uk-icon-edit"></i> 注册</a> </li>
+                {% endif %}
                 </ul>
             </div>
         </div>
-
     </nav>
 
     <div class="uk-container uk-container-center">
@@ -78,10 +79,11 @@
                     <a target="_blank" href="http://weibo.com/liaoxuefeng" class="uk-icon-button uk-icon-linkedin-square"></a>
                     <a target="_blank" href="http://weibo.com/liaoxuefeng" class="uk-icon-button uk-icon-twitter"></a>
                 </p>
-                <p>Powered by <a href="http://weibo.com/liaoxuefeng">Awesome Python Webapp</a>. Copyright &copy; 2014. [<a href="/manage/" target="_blank">Manage</a> </p>
+                <p>Powered by <a href="http://weibo.com/liaoxuefeng">Awesome Python Webapp</a>. Copyright &copy; 2014. [<a href="/manage/" target="_blank">Manage</a>] </p>
                 <p><a href="http://weibo.com/liaoxuefeng">www.libaokun.com</a>. All rights reserved.</p>
                 <a target="_blank" href="http://weibo.com/liaoxuefeng"><i class="uk-icon-html5" style="font-size:64px;color: #444;"></i> </a>
             </div>
+
         </div>
     </div>
 </body>

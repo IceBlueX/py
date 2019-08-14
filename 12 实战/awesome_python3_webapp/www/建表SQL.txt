@@ -1,0 +1,91 @@
+-- Database: test
+
+-- DROP DATABASE test;
+
+CREATE DATABASE test
+  WITH OWNER = libaokun
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'zh_CN.UTF-8'
+       LC_CTYPE = 'zh_CN.UTF-8'
+       CONNECTION LIMIT = -1;
+
+
+
+
+-- Table: public.blogs
+
+-- DROP TABLE public.blogs;
+
+CREATE TABLE public.blogs
+(
+  id character varying(50) NOT NULL, -- not null
+  user_id character varying(50) NOT NULL,
+  user_name character varying(50) NOT NULL,
+  user_image character varying(500) NOT NULL,
+  name character varying(50) NOT NULL,
+  summary character varying(200) NOT NULL,
+  content text NOT NULL,
+  created_at real NOT NULL,
+  CONSTRAINT blogs_pkey PRIMARY KEY (id),
+  CONSTRAINT blogs_created_at_key UNIQUE (created_at)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.blogs
+  OWNER TO libaokun;
+COMMENT ON COLUMN public.blogs.id IS 'not null';
+
+
+-- Table: public.comments
+
+-- DROP TABLE public.comments;
+
+CREATE TABLE public.comments
+(
+  id character varying(50) NOT NULL, -- not null
+  blog_id character varying(50) NOT NULL,
+  user_id character varying(50) NOT NULL,
+  user_name character varying(50) NOT NULL,
+  user_image character varying(500) NOT NULL,
+  content text NOT NULL,
+  created_at real NOT NULL,
+  CONSTRAINT comments_pkey PRIMARY KEY (id),
+  CONSTRAINT comments_created_at_key UNIQUE (created_at)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.comments
+  OWNER TO libaokun;
+COMMENT ON COLUMN public.comments.id IS 'not null';
+
+
+
+-- Table: public.users
+
+-- DROP TABLE public.users;
+
+CREATE TABLE public.users
+(
+  id character varying(50) NOT NULL, -- not null
+  email character varying(50) NOT NULL,
+  passwd character varying(50) NOT NULL,
+  admin boolean NOT NULL,
+  name character varying(50) NOT NULL,
+  image character varying(500) NOT NULL,
+  created_at real NOT NULL,
+  CONSTRAINT users_pkey PRIMARY KEY (id),
+  CONSTRAINT users_created_at_key UNIQUE (created_at),
+  CONSTRAINT users_email_key UNIQUE (email)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.users
+  OWNER TO libaokun;
+COMMENT ON COLUMN public.users.id IS 'not null';
+
+
+

@@ -36,14 +36,14 @@ print(L)
 
 
 for row in rows:
-    print(L[0],':',row['id'],'\t',L[1],':',row['passwo'],'\t',L[2],':',row['isadmin'])
+    print(L[0], ':', row['id'], '\t', L[1], ':', row['passwo'], '\t', L[2], ':', row['isadmin'])
 print('\n')
 
 print(rows)
 
 # 写入本地json
-with open("./test.json",'w',encoding='utf-8') as json_file:
-    json.dump(rows,json_file,ensure_ascii=False)
+with open("./test.json", 'w', encoding='utf-8') as json_file:
+    json.dump(rows, json_file, ensure_ascii=False)
 
 
 # 关闭游标
