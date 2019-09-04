@@ -85,9 +85,6 @@ async def cookie2user(cookie_str):
         logging.exception(e)
         return None
 
-_RE_EMAIL = re.compile(r'^[a-z0-9\.\-\_]+\@[a-z0-9\-\_]+(\.[a-z0-9\-\_]+){1,4}$')
-_RE_SHA1 = re.compile(r'^[0-9a-f]{40}$')
-
 # 前端框架
 #
 #
@@ -95,22 +92,7 @@ _RE_SHA1 = re.compile(r'^[0-9a-f]{40}$')
 #
 # #### 评论列表页：GET/manage/comments
 # #### 日志列表页：GET/manage/blogs
-@get('/manage/blogs')
-def manage_blogs(*, page='1'):
-    return {
-        '__template__': 'manage_blogs.html',
-        'page_index': get_page_index(page)
-    }
-
 # #### 创建日志页：GET/manage/blogs/create
-@get('/manage/blogs/create')
-def manage_creat_blog():
-    return {
-        '__template__': 'manage_blog_edit.html',
-        'id': '',
-        'action': '/api/blogs'
-    }
-
 # #### 修改日志页：GET/manage/blogs/
 # #### 用户列表页：GET/manage/users
 #
@@ -118,29 +100,25 @@ def manage_creat_blog():
 # ## 用户浏览页面包括：
 #
 # #### 注册页：GET/register
-@get('/register')
-async def register():
-    return {
-        '__template__': 'register.html'
-    }
-
 # #### 登录页：GET/signin
-@get('/signin')
-async def signin():
-    return {
-        '__template__': 'signin.html'
-    }
-
 # #### 注销页：GET/signout
-@get('/signout')
-async def signout(request):
-    referer = request.headers.get('Referer')
-    r = web.HTTPFound(referer or '/')
-    r.set_cookie(COOKIE_NAME, '-deleted-', max_age=0, httponly=True)
-    logging.info('user signed out.')
-    return r
-
 # #### 首页：GET/
+# #### 日志详情页：GET/blog/:blog_id
+#
+#
+# ## 后端API包括：
+#
+# #### 获取日志：GET/api/blogs
+# #### 创建日志：POST/api/blogs
+# #### 修改日志：POST/api/blogs/:blog_id
+# #### 删除日志：POST/api/blogs/:blog_id/delete
+# #### 获取评论：GET/api/comments
+# #### 创建评论：POST/api/blogs//:blog_id/comments
+# #### 删除评论：POST/api/comments/:comment_id/delete
+# #### 创建新用户：POST/api/users
+# #### 获取用户：GET/api/users
+
+
 @get('/')
 async def index(request):
     # users = await User.findAll()
@@ -159,7 +137,14 @@ async def index(request):
         # '__user__': request.__user__
     }
 
-# #### 日志详情页：GET/blog/:blog_id
+
+# @get('/api/user')
+# async def api_get_users():
+#     users = await User.findAll(orderBy='created_at desc')
+#     for u in users:
+#         u.passwd = '******'
+#     return dict(users=users)
+
 @get('/blog/{id}')
 async def get_blog(id):
     blog = await Blog.find(id)
@@ -173,55 +158,78 @@ async def get_blog(id):
         'comments': comments
     }
 
-#
-#
-# ## 后端API包括：
-#
-# #### 获取日志：GET/api/blogs
-@get('/api/blogs')
-async def api_blogs(*, page='1'):
-    page_index = get_page_index(page)
-    num = await Blog.findNumber('count(id)')
-    p = Page(num, page_index)
-    if num == 0:
-        return dict(page=p, blogs=())
-    print('在 handlers.py->api_blogs() 读取的条数及位置', (p.offset, p.limit))
-    blogs = await Blog.findAll(orderBy='created_at desc', limit=(p.limit, p.offset))
-    return dict(page=p, blogs=blogs)
 
-# #### 创建日志：POST/api/blog
-@post('/api/blog')
-async def api_creat_blog(request, *, name, summary, content):
-    check_admin(request)
-    if not name or not name.strip():
-        raise APIValueError('name', 'name cannot be empty.')
-    if not summary or not summary.strip():
-        raise APIValueError('summary', 'summary cannot be empty.')
-    if not content or not content.strip():
-        raise APIValueError('content', 'content cannot be empty.')
+@get('/register')
+async def register():
+    return {
+        '__template__': 'register.html'
+    }
 
-    blog = Blog(
-        user_id=request.__user__.id,
-        user_name=request.__user__.name,
-        user_image=request.__user__.image,
-        name=name.strip(),
-        summary=summary.strip(),
-        content=content.strip()
-    )
-    await blog.save()
-    return blog
 
-# #### 修改日志：POST/api/blogs/:blog_id
-@get('/api/blogs/{id}')
-async def api_get_blog(*, id):
-    blog = await Blog.find(id)
-    return blog
+@get('/signin')
+async def signin():
+    return {
+        '__template__': 'signin.html'
+    }
 
-# #### 删除日志：POST/api/blogs/:blog_id/delete
-# #### 获取评论：GET/api/comments
-# #### 创建评论：POST/api/blogs//:blog_id/comments
-# #### 删除评论：POST/api/comments/:comment_id/delete
-# #### 创建新用户：POST/api/users
+
+@post('/api/authenticate')
+async def authenticate(*, email, passwd):
+    if not email:
+        raise APIValueError('email', 'Invalid email.')
+    if not passwd:
+        raise APIValueError('passwd', 'Invalid password.')
+    users = await User.findAll('email=?', [email])
+    if len(users) == 0:
+        raise APIValueError('email', 'Email not exist.')
+    user = users[0]
+
+    # 开始检查密码
+    sha1 = hashlib.sha1()
+    sha1.update(user.id.encode('utf-8'))
+    sha1.update(b':')
+    sha1.update(passwd.encode('utf-8'))
+    if user.passwd != sha1.hexdigest():
+        raise APIValueError('passwd', 'Invalid password.')
+    # 验证完毕, 开始设置cookie 二十四小时内有效
+    r = web.Response()
+    r.set_cookie(COOKIE_NAME, user2cookie(user, 86400), max_age=86400, httponly=True)
+    user.passwd = '******'
+    r.content_type = 'application/json'
+    r.body = json.dumps(user, ensure_ascii=False).encode('utf-8')
+    return r
+
+
+@get('/signout')
+async def signout(request):
+    referer = request.headers.get('Referer')
+    r = web.HTTPFound(referer or '/')
+    r.set_cookie(COOKIE_NAME, '-deleted-', max_age=0, httponly=True)
+    logging.info('user signed out.')
+    return r
+
+
+@get('/manage/blogs')
+def manage_blogs(*, page='1'):
+    return {
+        '__template__': 'manage_blogs.html',
+        'page_index': get_page_index(page)
+    }
+
+
+@get('/manage/blogs/create')
+def manage_creat_blog():
+    return {
+        '__template__': 'manage_blog_edit.html',
+        'id': '',
+        'action': '/api/blogs'
+    }
+
+
+_RE_EMAIL = re.compile(r'^[a-z0-9\.\-\_]+\@[a-z0-9\-\_]+(\.[a-z0-9\-\_]+){1,4}$')
+_RE_SHA1 = re.compile(r'^[0-9a-f]{40}$')
+
+
 @post('/api/users')
 async def api_register_user(*, email, name, passwd):
     if not name or not name.strip():
@@ -253,40 +261,58 @@ async def api_register_user(*, email, name, passwd):
     r.body = json.dumps(user, ensure_ascii=False).encode('utf-8')
     return r
 
-# #### 获取用户：GET/api/users
-# #### 验证邮箱及密码并在本地建立cookie：GET//api/authenticate
-@post('/api/authenticate')
-async def authenticate(*, email, passwd):
-    if not email:
-        raise APIValueError('email', 'Invalid email.')
-    if not passwd:
-        raise APIValueError('passwd', 'Invalid password.')
-    users = await User.findAll('email=?', [email])
-    if len(users) == 0:
-        raise APIValueError('email', 'Email not exist.')
-    user = users[0]
 
-    # 开始检查密码
-    sha1 = hashlib.sha1()
-    sha1.update(user.id.encode('utf-8'))
-    sha1.update(b':')
-    sha1.update(passwd.encode('utf-8'))
-    if user.passwd != sha1.hexdigest():
-        raise APIValueError('passwd', 'Invalid password.')
-    # 验证完毕, 开始设置cookie 二十四小时内有效
-    r = web.Response()
-    r.set_cookie(COOKIE_NAME, user2cookie(user, 86400), max_age=86400, httponly=True)
-    user.passwd = '******'
-    r.content_type = 'application/json'
-    r.body = json.dumps(user, ensure_ascii=False).encode('utf-8')
-    return r
+@get('/api/blogs')
+async def api_blogs(*, page='1'):
+    page_index = get_page_index(page)
+    num = await Blog.findNumber('count(id)')
+    p = Page(num, page_index)
+    if num == 0:
+        return dict(page=p, blogs=())
+    print('在 handlers.py->api_blogs() 读取的条数及位置', (p.offset, p.limit))
+    blogs = await Blog.findAll(orderBy='created_at desc', limit=(p.limit, p.offset))
+    return dict(page=p, blogs=blogs)
 
 
-# @get('/api/user')
-# async def api_get_users():
-#     users = await User.findAll(orderBy='created_at desc')
-#     for u in users:
-#         u.passwd = '******'
-#     return dict(users=users)
+@get('/api/blogs/{id}')
+async def api_get_blog(*, id):
+    blog = await Blog.find(id)
+    return blog
+
+
+@post('/api/blog')
+async def api_creat_blog(request, *, name, summary, content):
+    check_admin(request)
+    if not name or not name.strip():
+        raise APIValueError('name', 'name cannot be empty.')
+    if not summary or not summary.strip():
+        raise APIValueError('summary', 'summary cannot be empty.')
+    if not content or not content.strip():
+        raise APIValueError('content', 'content cannot be empty.')
+
+    blog = Blog(
+        user_id=request.__user__.id,
+        user_name=request.__user__.name,
+        user_image=request.__user__.image,
+        name=name.strip(),
+        summary=summary.strip(),
+        content=content.strip()
+    )
+    await blog.save()
+    return blog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

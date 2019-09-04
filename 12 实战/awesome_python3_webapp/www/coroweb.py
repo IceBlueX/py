@@ -182,7 +182,7 @@ def add_routes(app, module_name):
         mod = __import__(module_name, globals(), locals())
     else:
         name = module_name[n+1:]
-        mod = getattr(__import__(module_name[:n], globals(), locals(), [name], name))
+        mod = getattr(__import__(module_name[:n], globals(), locals(), [name]), name)
     for attr in dir(mod):
         if attr.startswith('_'):
             continue

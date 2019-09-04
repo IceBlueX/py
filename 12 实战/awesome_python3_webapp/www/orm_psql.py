@@ -230,19 +230,21 @@ class Model(dict, metaclass=ModelMetaclass):
                 sql.append('?')
                 args.append(limit)
             elif isinstance(limit, tuple) and len(limit) == 2:
-                sql.append('?, ?')
+                sql.append('? offset ?')
                 args.extend(limit)
             else:
                 raise ValueError('Invalid limit value: %s' % str(limit))
-
+        print(sql, args)
         rs = await select(' '.join(sql), args)
 
+        print('findAll 中字段名', sql)
         fields = ('id', 'email', 'passwd', 'admin', 'name', 'image', 'creat_time')
-        rs_dict = []
+        rs_list = []
         for r in rs:
-            rs_dict.append(dict(zip(fields, r)))
-        print('在 orm_psql.py->Model->findAll 将数据库获得的数据送到index', rs_dict)
-        return [cls(**r) for r in rs_dict]
+            rs_list.append(dict(zip(fields, r)))
+        print('在 orm_psql.py->Model->findAll() 将数据库获得的数据送到index', rs_list)
+
+        return [cls(**r) for r in rs_list]
 
     @classmethod
     async def findNumber(cls, selectField, where=None, args=None):
@@ -254,16 +256,25 @@ class Model(dict, metaclass=ModelMetaclass):
         :return:
         """
 
-        sql = ['select %s _num_ from `%s`' % (selectField, cls.__table__)]
+        sql = ['select %s _num_ from %s' % (selectField, cls.__table__)]
 
         if where:
             sql.append('where')
             sql.append(where)
 
         rs = await select(' '.join(sql), args, 1)
+        print('在 orm_psql.py->Model->findNumber() 将数据库获得的数据送到index 未处理', rs)
         if len(rs) == 0:
             return None
-        return rs[0]['_num_']
+
+        fields = ('_num_', 'id', 'email', 'passwd', 'admin', 'name', 'image', 'creat_time')
+        # fields = selectField.split(', ')
+        rs_list = []
+        for r in rs:
+            rs_list.append(dict(zip(fields, r)))
+        print('在 orm_psql.py->Model->findNumber() 将数据库获得的数据送到index', rs_list)
+
+        return rs_list[0]['_num_']
 
     @classmethod
     async def find(cls, pk):
@@ -272,10 +283,21 @@ class Model(dict, metaclass=ModelMetaclass):
         :param pk:
         :return:
         """
-        rs = await select('%s where `%s`=?' % (cls.__select__, cls.__primary_key__), [pk], 1)
+        rs = await select('%s where %s=?' % (cls.__select__, cls.__primary_key__), [pk], 1)
+        # print('在 orm_psql.py->Model->find() selcet>>>', cls.__select__)
+        # print('在 orm_psql.py->Model->find() key>>>',  cls.__primary_key__)
+        # print('在 orm_psql.py->Model->find() pk>>>', [pk])
+        # print('在 orm_psql.py->Model->find() cls>>>', cls.escaped_fields)
         if len(rs) == 0:
             return None
-        return cls(**rs[0])
+
+        fields = ('id', 'email', 'passwd', 'admin', 'name', 'image', 'creat_time')
+        rs_list = []
+        for r in rs:
+            rs_list.append(dict(zip(fields, r)))
+        print('在 orm_psql.py->Model->find() 将数据库获得的数据送到index', rs_list)
+
+        return cls(**rs_list[0])
 
     async def save(self):
         args = list(map(self.getValueOrDefault, self.__fields__))

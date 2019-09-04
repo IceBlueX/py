@@ -3,17 +3,18 @@ import threading
 import os
 import time 
 
-#创建socket
-s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# 创建socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-#绑定监听端口
-s.bind(('127.0.0.1',9999))
+# 绑定监听端口
+s.bind(('127.0.0.1', 9999))
 
-#监听端口
+# 监听端口
 s.listen(5)
 print('waiting for connection...')
 
-def tcplink(sock,addr):
+
+def tcplink(sock, addr):
     print('Accept new connection from %s:%s...'% addr)
     sock.send(b'Welcome!')
     while True:
@@ -21,15 +22,16 @@ def tcplink(sock,addr):
         time.sleep(1)
         if not data or data.decode('utf-8') == 'exit':
             break
-        sock.send(('Hello, %s'% data.decode('utf-8')).encode('utf-8'))
+        sock.send(('Hello, %s' % data.decode('utf-8')).encode('utf-8'))
     sock.close()
     print('Connection from %s:%s closed.' % addr)
-    
+
+
 while True:
-    #接受一个新链接
-    sock,addr = s.accept()
-    #创建新线程来处理TCP连接
-    t=threading.Thread(target=tcplink,args=(sock,addr))
+    # 接受一个新链接
+    sock, addr = s.accept()
+    # 创建新线程来处理TCP连接
+    t = threading.Thread(target=tcplink, args=(sock, addr))
     t.start()
 
 

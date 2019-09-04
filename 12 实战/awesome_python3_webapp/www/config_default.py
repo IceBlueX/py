@@ -14,7 +14,7 @@ configs = {
         'port': 5432,
         'user': 'libaokun',
         'password': 'password',
-        'datebase': 'tset',
+        'database': 'test',
     },
     'session': {
         'secret': 'Awesome'
