@@ -189,8 +189,8 @@ async def api_blogs(*, page='1'):
     blogs = await Blog.findAll(orderBy='created_at desc', limit=(p.limit, p.offset))
     return dict(page=p, blogs=blogs)
 
-# #### 创建日志：POST/api/blog
-@post('/api/blog')
+# #### 创建日志：POST/api/blogs
+@post('/api/blogs')
 async def api_creat_blog(request, *, name, summary, content):
     check_admin(request)
     if not name or not name.strip():
