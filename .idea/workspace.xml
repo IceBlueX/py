@@ -2,8 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4afd17b8-252d-4eca-a201-aa7e9f9cb905" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/upload-demo/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/upload-demo/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload-demo/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/upload-demo/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14-常用内建模块/collections.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_gui/tkinter main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_gui/turtle_main1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_gui/turtle_main2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16-web开发/Flask/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16-web开发/Flask/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16-web开发/Flask/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16-web开发/Flask/templates/signin-ok.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16-web开发/flask_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-异步IO/coroutine_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/py.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/py.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/markdown2.py" beforeDir="false" afterPath="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/markdown2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/static/js/vue.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/static/js/vue.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-同步IO/StringIO和BytesIO.py" beforeDir="false" afterPath="$PROJECT_DIR$/9-IO编程/StringIO和BytesIO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-同步IO/dump.json" beforeDir="false" afterPath="$PROJECT_DIR$/9-IO编程/dump.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-同步IO/dump.txt" beforeDir="false" afterPath="$PROJECT_DIR$/9-IO编程/dump.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-同步IO/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/9-IO编程/test.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-同步IO/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/9-IO编程/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-同步IO/test0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/9-IO编程/test0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-同步IO/test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/9-IO编程/test1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-同步IO/序列化-JSON练习.py" beforeDir="false" afterPath="$PROJECT_DIR$/9-IO编程/序列化-JSON练习.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-同步IO/序列化-JSON进阶.py" beforeDir="false" afterPath="$PROJECT_DIR$/9-IO编程/序列化-JSON进阶.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-同步IO/序列化.py" beforeDir="false" afterPath="$PROJECT_DIR$/9-IO编程/序列化.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-同步IO/操作文件和目录.py" beforeDir="false" afterPath="$PROJECT_DIR$/9-IO编程/操作文件和目录.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-同步IO/文件读写.py" beforeDir="false" afterPath="$PROJECT_DIR$/9-IO编程/文件读写.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/socket.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/socket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/tcp/socketclient.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/tcp/socketclient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/tcp/socketserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/tcp/socketserver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/123.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/123.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/flask_urllib3/flask_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/flask_urllib3/flask_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/flask_urllib3/urllib3_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/flask_urllib3/urllib3_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/requests/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/requests/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/requests/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/requests/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/ssh/ssh_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/ssh/ssh_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/ssh/ssh_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/ssh/ssh_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/tcp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/tcp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/tcp/get_dove_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/tcp/get_dove_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/tcp/get_dove_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/tcp/get_dove_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/websocket/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/websocket/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/websocket/src/jquery-1.6.4.js" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/websocket/src/jquery-1.6.4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/websocket/src/jquery-1.6.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/websocket/src/jquery-1.6.4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/websocket/src/jquery.json-2.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/websocket/src/jquery.json-2.2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/websocket/websocket_client.html" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/websocket/websocket_client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/websocket/websocket_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/websocket/websocket_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/websocket_test0/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/websocket_test0/client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/trans_file/websocket_test0/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/trans_file/websocket_test0/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/udp/udpclient.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/udp/udpclient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/网络编程/udp/udpserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/13-网络编程/udp/udpserver.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,10 +78,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="519">
+              <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -43,6 +91,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -78,13 +127,26 @@
         <option value="$PROJECT_DIR$/网络编程/udp/udpserver.py" />
         <option value="$PROJECT_DIR$/网络编程/tcp/socketserver.py" />
         <option value="$PROJECT_DIR$/网络编程/tcp/socketclient.py" />
+        <option value="$PROJECT_DIR$/14-常用内建模块/collections.py" />
+        <option value="$PROJECT_DIR$/15-图形界面/tkinter.py" />
+        <option value="$PROJECT_DIR$/15_gui/tkinter main.py" />
+        <option value="$PROJECT_DIR$/15_gui/turtle_main.py" />
+        <option value="$PROJECT_DIR$/15_gui/turtle_main2.py" />
+        <option value="$PROJECT_DIR$/16-web开发/Flask/flask_demo.py" />
+        <option value="$PROJECT_DIR$/16-web开发/flask_demo.py" />
+        <option value="$PROJECT_DIR$/16-web开发/Flask/template/home.html" />
+        <option value="$PROJECT_DIR$/16-web开发/Flask/templates/signin-ok.html" />
+        <option value="$PROJECT_DIR$/16-web开发/Flask/app.py" />
+        <option value="$PROJECT_DIR$/16-web开发/Flask/templates/form.html" />
+        <option value="$PROJECT_DIR$/17-异步IO/coroutine.py" />
+        <option value="$PROJECT_DIR$/17-异步IO/coroutine_demo.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="247" />
-    <option name="y" value="72" />
-    <option name="width" value="1501" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="738" />
+    <option name="y" value="51" />
+    <option name="width" value="1323" />
     <option name="height" value="927" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -103,7 +165,25 @@
             <path>
               <item name="py" type="b2602c69:ProjectViewProjectNode" />
               <item name="py" type="462c0819:PsiDirectoryNode" />
-              <item name="网络编程" type="462c0819:PsiDirectoryNode" />
+              <item name="12 实战" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py" type="462c0819:PsiDirectoryNode" />
+              <item name="12 实战" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_python3_webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py" type="462c0819:PsiDirectoryNode" />
+              <item name="12 实战" type="462c0819:PsiDirectoryNode" />
+              <item name="awesome_python3_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py" type="462c0819:PsiDirectoryNode" />
+              <item name="17-异步IO" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -113,23 +193,28 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/16-web开发/Flask" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/数据处理" />
-      <recent name="$PROJECT_DIR$/网络编程/trans_file" />
-      <recent name="$PROJECT_DIR$/some_scripts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/16-web开发/Flask" />
+      <recent name="$PROJECT_DIR$/15_gui" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www" />
       <recent name="$PROJECT_DIR$/11-正则表达式" />
-      <recent name="$PROJECT_DIR$/10-进程和线程/分布式进程" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/16-web开发" />
+      <recent name="$PROJECT_DIR$/16-web开发/Flask" />
+      <recent name="$PROJECT_DIR$/数据处理" />
+      <recent name="$PROJECT_DIR$/网络编程/trans_file" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -144,52 +229,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="数据访问测试代码" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="py" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/数据访问测试代码.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="py" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.app (1)">
+    <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -211,26 +252,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="py" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/some_scripts/3D_To_2D" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/some_scripts/3D_To_2D/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pandas_try" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -238,34 +260,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/数据处理" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/16-web开发/Flask" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/数据处理/pandas_try.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="while" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="py" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1-基础入门" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1-基础入门/while.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/16-web开发/Flask/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -274,13 +274,86 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="coroutine_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/17-异步IO" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/17-异步IO/coroutine_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flask_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/16-web开发" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/16-web开发/flask_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="turtle_main2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/15_gui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/15_gui/turtle_main2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.turtle_main2" />
+      <item itemvalue="Python.flask_demo" />
+      <item itemvalue="Python.app" />
+      <item itemvalue="Python.coroutine_demo" />
+      <item itemvalue="Python.app (1)" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.pandas_try" />
-        <item itemvalue="Python.数据访问测试代码" />
+        <item itemvalue="Python.app (1)" />
+        <item itemvalue="Python.coroutine_demo" />
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.while" />
+        <item itemvalue="Python.flask_demo" />
+        <item itemvalue="Python.turtle_main2" />
       </list>
     </recent_temporary>
   </component>
@@ -317,12 +390,13 @@
       <workItem from="1567487877878" duration="151000" />
       <workItem from="1567660920781" duration="1179000" />
       <workItem from="1568797321299" duration="43000" />
-      <workItem from="1570868925293" duration="1171000" />
+      <workItem from="1570868925293" duration="2051000" />
+      <workItem from="1571118533132" duration="15199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70749000" />
+    <option name="totallyTimeSpent" value="86828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -334,15 +408,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="247" y="72" width="1501" height="927" extended-state="1" />
+    <frame x="738" y="51" width="1323" height="927" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24674435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28493366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25366405" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32934132" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2526946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43291995" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -352,16 +426,16 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32934132" />
-      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.17125748" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.31017965" />
       <window_info anchor="bottom" id="找到" order="13" />
       <window_info anchor="bottom" id="运行" order="14" weight="0.31079477" />
       <window_info anchor="bottom" id="调试" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" auto_hide="true" id="SciView" order="3" show_stripe_button="false" type="FLOATING" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" x="0" y="0" width="296" height="779" id="Documentation" order="5" side_tool="true" visible="true" weight="0.09664153" />
+      <window_info anchor="right" x="0" y="0" width="296" height="779" id="Documentation" order="5" side_tool="true" weight="0.09664153" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532656" />
@@ -391,63 +465,18 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/py$app.coverage" NAME="app Coverage Results" MODIFIED="1564368916807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www" />
+    <SUITE FILE_PATH="coverage/py$tkinter.coverage" NAME="tkinter Coverage Results" MODIFIED="1571130838871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15-图形界面" />
+    <SUITE FILE_PATH="coverage/py$app.coverage" NAME="app Coverage Results" MODIFIED="1571193640343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/16-web开发/Flask" />
+    <SUITE FILE_PATH="coverage/py$flask_demo.coverage" NAME="flask_demo Coverage Results" MODIFIED="1571133988366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/16-web开发" />
+    <SUITE FILE_PATH="coverage/py$turtle_main2.coverage" NAME="turtle_main2 Coverage Results" MODIFIED="1571132322262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_gui" />
+    <SUITE FILE_PATH="coverage/py$turtle_main.coverage" NAME="turtle_main Coverage Results" MODIFIED="1571132217831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_gui" />
+    <SUITE FILE_PATH="coverage/py$collections.coverage" NAME="collections Coverage Results" MODIFIED="1571127904213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/14-常用内建模块" />
+    <SUITE FILE_PATH="coverage/py$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1571197142623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www" />
     <SUITE FILE_PATH="coverage/py$.coverage" NAME="数据访问测试代码 Coverage Results" MODIFIED="1564466064124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12 实战/awesome_python3_webapp/www" />
+    <SUITE FILE_PATH="coverage/py$coroutine_demo.coverage" NAME="coroutine_demo Coverage Results" MODIFIED="1571197132933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/17-异步IO" />
+    <SUITE FILE_PATH="coverage/py$tkinter__1_.coverage" NAME="tkinter (1) Coverage Results" MODIFIED="1571132093369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_gui" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/multiprocessing/managers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7660">
-          <caret line="631" selection-start-line="631" selection-end-line="631" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/10-进程和线程/分布式进程/task_worker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-          <folding>
-            <element signature="e#7#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/10-进程和线程/分布式进程/test.py" />
-    <entry file="file://$PROJECT_DIR$/10-进程和线程/ThreadLocal.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/10-进程和线程/多线程-LOCK.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/10-进程和线程/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/10-进程和线程/多线程-多核CPU.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/10-进程和线程/多进程.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/11-正则表达式/openpyxl.py" />
-    <entry file="file://$PROJECT_DIR$/1-基础入门/for.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1-基础入门/ifelse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -593,43 +622,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/网络编程/udp/udpserver.py">
+    <entry file="file://$PROJECT_DIR$/13-网络编程/udp/udpserver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/网络编程/udp/udpclient.py">
+    <entry file="file://$PROJECT_DIR$/13-网络编程/udp/udpclient.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/网络编程/trans_file/websocket/websocket_client.html">
+    <entry file="file://$PROJECT_DIR$/13-网络编程/trans_file/websocket/websocket_client.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/网络编程/trans_file/websocket/websocket_server.py">
+    <entry file="file://$PROJECT_DIR$/13-网络编程/trans_file/websocket/websocket_server.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据处理/pandas_try.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#68#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/数据处理/pandas_try.py" />
     <entry file="file://$PROJECT_DIR$/10-进程和线程/多进程-进程间通信.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -640,17 +653,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10-进程和线程/分布式进程/task_master.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#32#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/网络编程/trans_file/tcp/get_dove_server.py">
+    <entry file="file://$PROJECT_DIR$/13-网络编程/trans_file/tcp/get_dove_server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
@@ -709,7 +712,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/网络编程/tcp/socketserver.py">
+    <entry file="file://$PROJECT_DIR$/13-网络编程/tcp/socketserver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
@@ -719,17 +722,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/网络编程/tcp/socketclient.py">
+    <entry file="file://$PROJECT_DIR$/13-网络编程/tcp/socketclient.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/9-IO编程/StringIO和BytesIO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-进程和线程/分布式进程/task_master.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#32#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15_gui/tkinter main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <element signature="e#89#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15_gui/turtle_main1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15_gui/turtle_main2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14-常用内建模块/collections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16-web开发/Flask/templates/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16-web开发/Flask/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16-web开发/Flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16-web开发/Flask/templates/signin-ok.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16-web开发/flask_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17-异步IO/coroutine_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12 实战/awesome_python3_webapp/www/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
         </state>
       </provider>
     </entry>

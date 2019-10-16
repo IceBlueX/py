@@ -1,6 +1,6 @@
 ###读文件
 #
-with open('/Users/libaokun/py/9-同步IO/test.txt','r') as f:
+with open('/Users/libaokun/py/9-IO编程/test.txt','r') as f:
     L = f.read()
     print(L)
 #
@@ -9,7 +9,7 @@ with open('/Users/libaokun/py/9-同步IO/test.txt','r') as f:
 #readline()可以每次读取一行内容
 #readlines()以此读取全部内容，并按行返回list
 #
-with open('/Users/libaokun/py/9-同步IO/test.txt','r') as f:
+with open('/Users/libaokun/py/9-IO编程/test.txt','r') as f:
     L = f.readlines()
     for n in L:
         print(n.strip()) # 把末尾的’\n‘去掉
@@ -27,7 +27,7 @@ with open('/Users/libaokun/py/9-同步IO/test.txt','r') as f:
 ###二进制文件
 #
 #要读取二进制文件，比如图片，视频等等，用’rb‘模式打开文件即可
-f = open('/Users/libaokun/py/9-同步IO/test.png','rb')
+f = open('/Users/libaokun/py/9-IO编程/test.png','rb')
 print(f.read())
 #
 
@@ -35,7 +35,7 @@ print(f.read())
 ###字符编码
 #要读取非UTF-8编码的文本文件，需要给open()函数传入encoding参数
 #
-with open('/Users/libaokun/py/9-同步IO/test0.txt','r',encoding = 'gbk', errors = 'ignore') as f:
+with open('/Users/libaokun/py/9-IO编程/test0.txt','r',encoding = 'gbk', errors = 'ignore') as f:
     L = f.read()                                                        # ^^^接收errors参数，对应遇到错误后的处理方式
     print(L)                                                            # |||此处为忽略错误
 #
@@ -46,7 +46,7 @@ with open('/Users/libaokun/py/9-同步IO/test0.txt','r',encoding = 'gbk', errors
 # ’w’ 文本写文件，会覆盖  ‘wb’ 覆盖写二进制文件 ‘a’ 追加模式写入
 #要写入特定编码的文件，要给open函数传入encoding函数
 #没有f.close()且未使用with，数据可能只有部分写入磁盘
-with open('/Users/libaokun/py/9-同步IO/test1.txt','a') as f:
+with open('/Users/libaokun/py/9-IO编程/test1.txt','a') as f:
     f.write('Hello, world!')
 #
 

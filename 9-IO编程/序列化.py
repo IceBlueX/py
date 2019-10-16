@@ -7,12 +7,12 @@ a = pickle.dumps(d) #dumps()将任意一个对象序列化为一个bytes,然后�
 print(a)
 
 #也可以用dump直接写入文件
-#f = open('./9-同步IO/dump.txt', 'wb')
+#f = open('./9-IO编程/dump.txt', 'wb')
 #pickle.dump(d,f)
 #f.close()
 
 #再用load读取
-f = open('./9-同步IO/dump.txt', 'rb')
+f = open('./9-IO编程/dump.txt', 'rb')
 d = pickle.load(f)
 f.close()
 print(d)
@@ -34,7 +34,7 @@ l = json.dumps(d)
 print(l)
 
 #也可以用dump直接写入文件
-f = open('./9-同步IO/dump.json', 'w')
+f = open('./9-IO编程/dump.json', 'w')
 json.dump(d,f)
 f.close()
 

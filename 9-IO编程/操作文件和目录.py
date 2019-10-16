@@ -32,14 +32,14 @@ print(os.path.split('/Users/libaokun/py/test'))
 # 得到文件扩展名
 print(os.path.splitext('/Users/libaokun/py/README.md'))
 
-#os.rename('./9-同步IO/test.txt','./9-同步IO/test.py')
-#os.rename('./9-同步IO/test.py','./9-同步IO/test.txt')
+#os.rename('./9-IO编程/test.txt','./9-IO编程/test.py')
+#os.rename('./9-IO编程/test.py','./9-IO编程/test.txt')
 
 # 创建文件
-#with open('/Users/libaokun/py/9-同步IO/test11.txt','a') as f:
+#with open('/Users/libaokun/py/9-IO编程/test11.txt','a') as f:
 #    f.write('Hello, world!')
 # 删除文件
-#os.remove('./9-同步IO/test11.txt')
+#os.remove('./9-IO编程/test11.txt')
 
 #shutil模块提供了copyfile()函数，可以复制文件
 
