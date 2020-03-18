@@ -1,9 +1,11 @@
 # 忽略build/ 目录下的所有文件
-idea/
+*idea/
+*vscode/
 coverage/__pycache__/
 tracking/__pycache__/
 
 # 忽略xml
 *.xml
 *.pyc
+*test.py
 
