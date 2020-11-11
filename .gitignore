@@ -1,10 +1,17 @@
-# 忽略build/ 目录下的所有文件
-*idea/
-*vscode/
-coverage/__pycache__/
-tracking/__pycache__/
-
 # 忽略xml
 *.xml
 *.pyc
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+.DS_Store
+
+
 
